@@ -13,17 +13,21 @@
     <!-- Tailwind CSS for modern enterprise design -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-[#0B0F19] text-slate-200 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+<body class="bg-[#0B0F13] bg-gradient-to-br from-[#0B0F13] via-[#11181F] to-[#0B0F13] text-slate-200 font-sans antialiased selection:bg-[#22C55E] selection:text-[#0B0F13] min-h-screen">
 
     <!-- Navbar -->
-    <header class="border-b border-slate-800/80 backdrop-blur-md sticky top-0 bg-[#0B0F19]/80 z-50">
+    <header class="border-b border-[#1F303B]/80 backdrop-blur-md sticky top-0 bg-[#0B0F13]/80 z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-black tracking-wider text-white flex items-center gap-2">
-                <span class="text-indigo-500">XTENDIFY</span>
+            <div class="text-xl font-black tracking-wider text-white flex items-center gap-3">
+                <!-- Logo Placeholder -->
+                <div class="w-8 h-8 rounded bg-[#18232C] border border-[#22C55E] flex items-center justify-center text-[#22C55E] font-bold text-lg">
+                    X
+                </div>
+                <span class="text-[#22C55E]">XTENDIFY</span>
             </div>
             
             <div class="flex items-center gap-4">
-                <button id="lang-toggle" class="text-xs font-mono px-3 py-1 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-md border border-slate-700 transition-colors flex items-center gap-1 cursor-pointer">
+                <button id="lang-toggle" class="text-xs font-mono px-3 py-1 bg-[#11181F] hover:bg-[#18232C] text-slate-300 rounded-md border border-[#1F303B] transition-colors flex items-center gap-1 cursor-pointer">
                     🌐 <span id="lang-label">IT</span>
                 </button>
             </div>
@@ -34,7 +38,7 @@
     <section class="max-w-5xl mx-auto px-6 pt-20 pb-16 text-center">
         <h1 class="text-4xl sm:text-6xl font-black tracking-tight text-white mb-6 leading-tight">
             <span data-en="Building the next-generation" data-it="Stiamo costruendo la nuova generazione">Building the next-generation</span> <br class="hidden sm:inline">
-            <span class="bg-gradient-to-r from-indigo-400 via-cyan-400 to-indigo-500 bg-clip-text text-transparent" 
+            <span class="bg-gradient-to-r from-[#22C55E] to-[#06B6D4] bg-clip-text text-transparent" 
                   data-en="enterprise extensibility platform." 
                   data-it="di piattaforme di estendibilità.">
                 enterprise extensibility platform.
@@ -51,14 +55,14 @@
         <div class="max-w-md mx-auto flex flex-col items-center justify-center">
             <a id="cta-button" 
                href="mailto:info@xtendify.it?subject=XTENDIFY%20-%20Inquiry&body=Dear%20XTENDIFY%20Team%2C%0A%0AI%20am%20interested%20in%20learning%20more%20about%20XTENDIFY%20extensibility%20solutions.%0A%0A1.%20ORGANIZATION%0A-%20Company%20Name%3A%20%0A-%20Industry%3A%20%0A%0A2.%20CURRENT%20INFRASTRUCTURE%0A-%20Primary%20ERP%3A%20%0A%0A3.%20INQUIRY%20DETAILS%0A-%20Preferred%20Architecture%3A%20(Business%20vs.%20Enterprise)%0A-%20Specific%20Requirements%3A%20%0A%0ABest%20regards%2C" 
-               class="inline-block bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-8 py-4 rounded-xl text-base transition-all duration-200 shadow-lg shadow-indigo-600/20 whitespace-nowrap transform hover:-translate-y-0.5"
+               class="inline-block bg-[#22C55E] hover:bg-[#1eb053] text-[#0B0F13] font-bold px-8 py-4 rounded-xl text-base transition-all duration-200 shadow-lg shadow-[#22C55E]/20 whitespace-nowrap transform hover:-translate-y-0.5"
                data-en="Contact Sales Team"
                data-it="Contatta il Team Commerciale">
                 Contact Sales Team
             </a>
             <p class="text-sm text-slate-500 mt-6">
                 <span data-en="Direct inquiries:" data-it="Richieste dirette:">Direct inquiries:</span> 
-                <a href="mailto:info@xtendify.it" class="text-indigo-400 hover:underline font-medium">info@xtendify.it</a>
+                <a href="mailto:info@xtendify.it" class="text-[#06B6D4] hover:underline font-medium">info@xtendify.it</a>
             </p>
         </div>
     </section>
@@ -73,13 +77,13 @@
             </p>
         </div>
         <div class="grid sm:grid-cols-2 gap-6 text-sm">
-            <div class="bg-slate-900/40 p-6 rounded-xl border border-slate-800">
+            <div class="bg-[#11181F]/80 p-6 rounded-xl border border-[#1F303B]">
                 <h4 class="text-white font-bold mb-2" data-en="Clean Core Compliance" data-it="Conformità Clean Core">Clean Core Compliance</h4>
                 <p class="text-slate-400" data-en="Extensions, scripts, and custom logic are developed side-by-side with your ERP, never inside it, ensuring complete system integrity." data-it="Estensioni, script e logiche personalizzate vengono sviluppate affiancate al tuo ERP, mai al suo interno, garantendo l'integrità del sistema.">
                     Extensions, scripts, and custom logic are developed side-by-side with your ERP, never inside it, ensuring complete system integrity.
                 </p>
             </div>
-            <div class="bg-slate-900/40 p-6 rounded-xl border border-slate-800">
+            <div class="bg-[#11181F]/80 p-6 rounded-xl border border-[#1F303B]">
                 <h4 class="text-white font-bold mb-2" data-en="Rapid Deployment Lifecycle" data-it="Ciclo di vita di distribuzione rapido">Rapid Deployment Lifecycle</h4>
                 <p class="text-slate-400" data-en="Reduce time-to-market from months to minutes. Our automated provisioning pipeline transforms business requirements into live, production-ready interfaces." data-it="Riduci il time-to-market da mesi a minuti. La nostra pipeline di provisioning automatizzata trasforma i requisiti aziendali in interfacce pronte per la produzione.">
                     Reduce time-to-market from months to minutes. Our automated provisioning pipeline transforms business requirements into live, production-ready interfaces.
@@ -90,7 +94,7 @@
 
     <!-- Architecture Tiers -->
     <section class="max-w-6xl mx-auto px-6 py-8">
-        <div class="bg-gradient-to-r from-slate-900 via-indigo-950/20 to-slate-900 p-8 rounded-2xl border border-slate-800/60">
+        <div class="bg-gradient-to-r from-[#11181F] via-[#18232C] to-[#11181F] p-8 rounded-2xl border border-[#1F303B]/60 shadow-xl shadow-[#0B0F13]">
             <div class="text-center mb-8">
                 <h2 class="text-2xl font-bold text-white mb-2" data-en="Infrastructure Tiers" data-it="Livelli Infrastrutturali">Infrastructure Tiers</h2>
                 <p class="text-slate-400 text-sm max-w-2xl mx-auto" data-en="Choose the deployment model that aligns with your operational and security requirements." data-it="Scegli il modello di distribuzione in linea con i tuoi requisiti operativi e di sicurezza.">
@@ -99,23 +103,23 @@
             </div>
             <div class="grid md:grid-cols-2 gap-6 text-sm">
                 <!-- Business Tier -->
-                <div class="bg-slate-950/50 p-6 rounded-xl border border-slate-800">
-                    <strong class="text-indigo-300 block mb-4 text-base">💼 Business Tier</strong>
+                <div class="bg-[#0B0F13]/60 p-6 rounded-xl border border-[#1F303B]">
+                    <strong class="text-[#06B6D4] block mb-4 text-base">💼 Business Tier</strong>
                     <ul class="space-y-3 text-slate-400">
-                        <li class="flex items-start gap-2"><span>✔</span> <span data-en="Optimized cost structure through shared routing" data-it="Struttura dei costi ottimizzata tramite routing condiviso">Optimized cost structure through shared routing</span></li>
-                        <li class="flex items-start gap-2"><span>✔</span> <span data-en="Dedicated compute containers for business logic" data-it="Container di calcolo dedicati per la logica di business">Dedicated compute containers for business logic</span></li>
-                        <li class="flex items-start gap-2"><span>✔</span> <span data-en="Logical database isolation" data-it="Isolamento logico del database">Logical database isolation</span></li>
-                        <li class="flex items-start gap-2"><span>✔</span> <span data-en="Rapid scalability" data-it="Scalabilità rapida">Rapid scalability</span></li>
+                        <li class="flex items-start gap-2"><span class="text-[#06B6D4]">✔</span> <span data-en="Optimized cost structure through shared routing" data-it="Struttura dei costi ottimizzata tramite routing condiviso">Optimized cost structure through shared routing</span></li>
+                        <li class="flex items-start gap-2"><span class="text-[#06B6D4]">✔</span> <span data-en="Dedicated compute containers for business logic" data-it="Container di calcolo dedicati per la logica di business">Dedicated compute containers for business logic</span></li>
+                        <li class="flex items-start gap-2"><span class="text-[#06B6D4]">✔</span> <span data-en="Logical database isolation" data-it="Isolamento logico del database">Logical database isolation</span></li>
+                        <li class="flex items-start gap-2"><span class="text-[#06B6D4]">✔</span> <span data-en="Rapid scalability" data-it="Scalabilità rapida">Rapid scalability</span></li>
                     </ul>
                 </div>
                 <!-- Enterprise Tier -->
-                <div class="bg-slate-950/50 p-6 rounded-xl border border-slate-800">
-                    <strong class="text-emerald-300 block mb-4 text-base">🏢 Enterprise Tier</strong>
+                <div class="bg-[#0B0F13]/60 p-6 rounded-xl border border-[#1F303B]">
+                    <strong class="text-[#22C55E] block mb-4 text-base">🏢 Enterprise Tier</strong>
                     <ul class="space-y-3 text-slate-400">
-                        <li class="flex items-start gap-2"><span>✔</span> <span data-en="Full network isolation in dedicated VPC" data-it="Isolamento completo della rete in VPC dedicata">Full network isolation in dedicated VPC</span></li>
-                        <li class="flex items-start gap-2"><span>✔</span> <span data-en="Physically isolated database instance" data-it="Istanza database fisicamente isolata">Physically isolated database instance</span></li>
-                        <li class="flex items-start gap-2"><span>✔</span> <span data-en="Dedicated load balancers" data-it="Load balancer dedicati">Dedicated load balancers</span></li>
-                        <li class="flex items-start gap-2"><span>✔</span> <span data-en="Maximum security compliance" data-it="Massima conformità di sicurezza">Maximum security compliance</span></li>
+                        <li class="flex items-start gap-2"><span class="text-[#22C55E]">✔</span> <span data-en="Full network isolation in dedicated VPC" data-it="Isolamento completo della rete in VPC dedicata">Full network isolation in dedicated VPC</span></li>
+                        <li class="flex items-start gap-2"><span class="text-[#22C55E]">✔</span> <span data-en="Physically isolated database instance" data-it="Istanza database fisicamente isolata">Physically isolated database instance</span></li>
+                        <li class="flex items-start gap-2"><span class="text-[#22C55E]">✔</span> <span data-en="Dedicated load balancers" data-it="Load balancer dedicati">Dedicated load balancers</span></li>
+                        <li class="flex items-start gap-2"><span class="text-[#22C55E]">✔</span> <span data-en="Maximum security compliance" data-it="Massima conformità di sicurezza">Maximum security compliance</span></li>
                     </ul>
                 </div>
             </div>
@@ -123,7 +127,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="border-t border-slate-900 bg-slate-950/20 mt-12">
+    <footer class="border-t border-[#1F303B] bg-[#11181F]/30 mt-12">
         <div class="max-w-6xl mx-auto px-6 py-12 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs font-mono text-slate-500">
             <div>
                 &copy; 2026 XTENDIFY. <span data-en="All rights reserved." data-it="Tutti i diritti riservati.">All rights reserved.</span>
